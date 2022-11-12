@@ -1,19 +1,29 @@
 /* Lap */
-/* @media (min-width: 64em) {
-
-} */
+@media (min-width: 64em) {}
 
 /* tablet */
-/* @media (min-width: 45.625em) and (max-width: 63.9375em){
+@media (min-width: 45.625em) and (max-width: 63.9375em) {
+    .text_9px {
+        font-size: 9px;
+    }
+
     .main {
-        width: 600px;
+        width: 700px;
         margin: 24px auto;
     }
 
-    .main__header .header {
-        border-top-left-radius: 100px;
-        border-bottom-right-radius: 100px;
+    .main .main__header {
+        border-top-left-radius: 140px;
+        border-bottom-right-radius: 140px;
         height: 200px;
+    }
+
+    .main .header {
+        margin: 0 1%;
+    }
+
+    .header .mt_rps_12 {
+        margin-top: 12px;
     }
 
     .header-profile .avatar {
@@ -32,13 +42,85 @@
     .header-profile .header-input-position {
         font-size: 10px;
     }
-} */
+
+    .header .header-profile-info {
+        margin-right: 5%;
+    }
+
+    .header .header-profile-info h4 {
+        font-size: 14px;
+    }
+
+    .header .header-list-info {
+        margin: 0 0 6px;
+    }
+
+    .main__body-description .text_14px h3 {
+        font-size: 14px;
+    }
+
+    .main__body-description .col-left h3 {
+        min-width: 68%;
+    }
+
+    .col-left .header-wrap-right {
+        padding: 8px 6px;
+        height: 32px;
+    }
+
+    .col-left .header-wrap-right::after {
+        display: block;
+        content: "";
+        position: absolute;
+        color: var(--primary-color-);
+        right: -33px;
+        top: 0px;
+        border: 16px solid;
+        border-right: 17px solid transparent;
+        border-top: 16px solid transparent;
+    }
+
+    .col-right .header-wrap-left {
+        padding: 8px 6px;
+        height: 32px;
+    }
+
+    .col-right .header-wrap-left::before {
+        display: block;
+        content: "";
+        position: absolute;
+        color: var(--primary-color-);
+        left: -33px;
+        top: -1px;
+        border: 16px solid;
+        border-left: 17px solid transparent;
+        border-top: 17px solid transparent;
+    }
+
+    .main__body-description .body-icon {
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+    .main__body-description input {
+        font-size: 13px;
+    }
+
+    .main__body-description .mb_rps_12-input {
+        margin-bottom: 12px;
+    }
+    
+    .main__body-description p, select {
+        font-size: 10px;
+    }
+
+}
 
 
 /* Mobile */
-/* @media (max-width: 45.5625em){
+@media (max-width: 45.5625em) {
     .main {
-        width: 300px;
+        width: 400px;
         margin: 0 auto;
     }
-} */
+}
