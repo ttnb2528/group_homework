@@ -105,8 +105,10 @@
     .main__body-description .mb_rps_12-input {
         margin-bottom: 12px;
     }
-    
-    .main__body-description p, select, input {
+
+    .main__body-description p,
+    select,
+    input {
         font-size: 10px;
     }
 
@@ -172,12 +174,14 @@
         margin: 0 0 2px;
     }
 
-    input[type="date"], input[type="tel"],
-    input[type="email"], input[type="text"] {
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="text"] {
         width: 80px;
     }
 
-    
+
 
     .main__body-description .text_14px h3 {
         font-size: 7px;
@@ -234,8 +238,10 @@
     .main__body-description .mb_rps-input-mobile {
         margin-bottom: 0px;
     }
-    
-    .main__body-description p, select, input {
+
+    .main__body-description p,
+    select,
+    input {
         font-size: 9px;
     }
 }

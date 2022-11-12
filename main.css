@@ -1,6 +1,6 @@
 /* base css */
 :root {
-    --primary-color- : #ff7171;
+    --primary-color-: #ff7171;
 
 }
 
@@ -86,7 +86,7 @@ ul {
 }
 
 
-.col-left::after  {
+.col-left::after {
     content: "";
     display: block;
     position: absolute;
@@ -148,7 +148,7 @@ ul {
     margin-left: 8%;
 }
 
-.col-left h3{
+.col-left h3 {
     min-width: 75%;
     font-size: 20px;
     color: #fff;
