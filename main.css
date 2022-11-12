@@ -1,0 +1,167 @@
+/* base css */
+:root {
+    --primary-color- : #ff7171;
+
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+
+/* CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main {
+    max-width: 1024px;
+    margin: 24px auto;
+}
+
+.main__header {
+    background-color: #ff7171;
+    border-top-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    height: 308px;
+}
+
+.header-profile {
+    max-width: 255px;
+    text-align: center;
+}
+
+.avatar {
+    width: 116px;
+    height: 132px;
+    border-radius: 5px;
+}
+
+.input-avatar {
+    font-size: 12px;
+}
+
+.header-profile-info {
+    font-size: 12px;
+}
+
+.header-list-info {
+    margin: 0 0 12px;
+}
+
+.main__body-description {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "l l l l r r r r r r r .";
+    display: grid;
+    position: relative;
+}
+
+.col-left {
+    grid-area: l;
+    margin-left: 16px;
+}
+
+
+.col-left::after  {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 3px solid #FB9089;
+    height: calc(100% + 16px);
+    top: 0;
+    left: 36%;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrap-right {
+    padding: 12px;
+    background-color: var(--primary-color-);
+    position: relative;
+    height: 44px;
+}
+
+.header-wrap-right::after {
+    display: block;
+    content: "";
+    position: absolute;
+    color: var(--primary-color-);
+    right: -43px;
+    top: 0px;
+    border: 22px solid;
+    border-right: 22px solid transparent;
+    border-top: 22px solid transparent;
+}
+
+.header-wrap-left {
+    padding: 12px;
+    background-color: var(--primary-color-);
+    position: relative;
+    height: 44px;
+}
+
+.header-wrap-left::before {
+    display: block;
+    content: "";
+    position: absolute;
+    color: var(--primary-color-);
+    left: -43px;
+    top: 0px;
+    border: 22px solid;
+    border-left: 22px solid transparent;
+    border-top: 22px solid transparent;
+}
+
+
+
+
+.col-right {
+    grid-area: r;
+    margin-left: 8%;
+}
+
+.col-left h3{
+    min-width: 75%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.col-right h3 {
+    min-width: 80%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.body-icon {
+    margin-top: 10px;
+    font-size: 24px;
+    color: var(--primary-color-);
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/font-icon/fontawesome-free-6.1.2-web/css/all.min.css">
+        <link rel="stylesheet" href="./responsive.css">
+        <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <div class="main">
+        <div class="main__header">
+            <div class="header">
+                <div class="header-profile mt24">
+                    <img class="avatar" src="./assets/img/download.png" alt="ảnh hồ sơ của bạn">
+                    <input class="input-avatar" type="file">
+                    <h5><input class="header-input-name" type="text" placeholder="Enter full name"></h5>
+                    <h8><input class="header-input-position" type="text" placeholder="Recruitment position"></h8>
+                </div>
+
+                <div class="header-profile-info mt24">
+                    <h4>Thông tin liên hệ</h4>
+
+                    <div class="header-list-info profile-sex">
+                        <i class="header-icon fa-solid fa-user"></i>
+                        <input type="radio" name="sex"> Nữ
+                        <input type="radio" name="sex"> Nam
+                    </div>
+
+                    <div class="header-list-info profile-date">
+                        <i class="header-icon fa-solid fa-calendar-days"></i>
+                        <input type="date" name="date">
+                    </div>
+
+                    <div class="header-list-info profile-phone-number">
+                        <i class="header-icon fa-solid fa-phone"></i>
+                        <input type="tel" name="phone">
+                    </div>
+
+                    <div class="header-list-info profile-email">
+                        <i class="header-icon fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter your Email">
+                    </div>
+
+                    <div class="header-list-info profile-address">
+                        <i class="header-icon fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Enter your address">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt24 main__body-description">
+            <div class="col-left">
+                <div class="description__job-goals">
+                    <div class="mt24 mb24 header-flex header__job-goals">
+                        <h3 class="header-wrap-right">Mục tiêu nghề nghiệp</h3>
+                        <i class="body-icon fa-solid fa-puzzle-piece"></i>
+                    </div>
+
+                    <div class="body__job-goals">
+                        <i class="fa-solid fa-check"></i>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="description__skill">
+                    <div class="mt24 mb24 header-flex header__skills">
+                        <h3 class="header-wrap-right">Kỹ Năng</h3>
+                        <i class="body-icon fa-solid fa-suitcase"></i>
+                    </div>
+
+                    <div class="body__skills">
+                        <ul class="skills_list">
+                            <li>
+                                - <input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="description__awards">
+                    <div class="mt24 mb24 header-flex header__awards">
+                        <h3 class="header-wrap-right">Giải thưởng</h3>
+                        <i class="body-icon fa-solid fa-award"></i>
+                    </div>
+
+                    <div class="body__awards">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="description__certificate">
+                    <div class="mt24 mb24 header-flex header__certificate">
+                        <h3 class="header-wrap-right">Chứng chỉ</h3>
+                        <i class="body-icon fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div class="body__certificate">
+                        <ul class="certificate_list">
+                            <li>
+                                - <input type="text">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="description__interests">
+                    <div class="mt24 mb24 header-flex header__interests">
+                        <h3 class="header-wrap-right">Sở thích</h3>
+                        <i class="body-icon fa-regular fa-thumbs-up"></i>
+                    </div>
+
+                    <div class="body__interest">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="description__level">
+                    <div class="mt24 mb24 header-flex header__level">
+                        <i class="body-icon fa-solid fa-trophy"></i>
+                            <h3 class="header-wrap-left">Trình độ học vấn</h3>
+                    </div>
+
+                    <div class="body__level">
+                        <select name="university" id="select-university">
+                            <option value="không có">Không có</option>
+                            <option value="tiểu học">Tiểu học</option>
+                            <option value="trung học">Trung học</option>
+                            <option value="cao đẳng">Cao đẳng</option>
+                            <option value="đại học">Đại học</option>
+                        </select>
+                        <p class="place__university">
+                            Trường/ nơi đào tạo: <input type="text">
+                        </p>
+                        <p class="place__university">
+                            Khoa: <input type="text">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="description__experience">
+                    <div class="mt24 mb24 header-flex header__experience">
+                        <i class="body-icon fa-solid fa-user-gear"></i>
+                        <h3 class="header-wrap-left">Kinh nghiệm làm việc</h3>
+                    </div>
+
+                    <div class="body__experience">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="description__projects">
+                    <div class="mt24 mb24 header-flex header__projects">
+                        <i class="body-icon fa-solid fa-bars"></i>
+                        <h3 class="header-wrap-left">Dự án tham gia</h3>
+                    </div>
+
+                    <div class="body__projects">
+                        <p>
+                            <input type="text" placeholder="Name Projects">
+                        </p>
+                        <input type="text" placeholder="Description Projects">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

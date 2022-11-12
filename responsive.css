@@ -1,0 +1,44 @@
+/* Lap */
+/* @media (min-width: 64em) {
+
+} */
+
+/* tablet */
+/* @media (min-width: 45.625em) and (max-width: 63.9375em){
+    .main {
+        width: 600px;
+        margin: 24px auto;
+    }
+
+    .main__header .header {
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        height: 200px;
+    }
+
+    .header-profile .avatar {
+        width: 58px;
+        height: 66px;
+    }
+
+    .header-profile .input-avatar {
+        font-size: 11px;
+    }
+
+    .header-profile .header-input-name {
+        font-size: 14px;
+    }
+
+    .header-profile .header-input-position {
+        font-size: 10px;
+    }
+} */
+
+
+/* Mobile */
+/* @media (max-width: 45.5625em){
+    .main {
+        width: 300px;
+        margin: 0 auto;
+    }
+} */
