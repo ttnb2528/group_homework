@@ -323,4 +323,14 @@
     .main__body-description .description-mobile-js {
         font-size: 9px;
     }
+
+    /* Modal */
+
+    .my-modal .modal-container {
+        max-width: 400px;
+    }
+
+    .my-modal .modal-body-mobile {
+        padding: 0;
+    }
 }
