@@ -32,6 +32,7 @@
     }
 
     .header-profile .input-avatar {
+        margin-left: 56px;
         font-size: 11px;
     }
 
@@ -112,6 +113,36 @@
         font-size: 10px;
     }
 
+    .main .btn {
+        margin-top: 32px;
+        font-size: 14px;
+    }
+
+    /* Javascript Css */
+    .main__body-description .description-tablet-js {
+        font-size: 12px;
+    }
+
+    .header-profile-info .header_contact-tablet-js {
+        font-size: 16px;
+        margin-right: 28px;
+    }
+
+    .header-profile-info .header-list-info-js {
+        margin: 0;
+    }
+
+    .header-profile-info .header-icon-tablet-js {
+        font-size: 12px;
+    }
+
+    .header-profile .header_name-tablet-js {
+        font-size: 16px;
+    }
+
+    .header-profile .header_position-tablet-js {
+        font-size: 16px;
+    }
 }
 
 
@@ -150,7 +181,7 @@
     }
 
     .header-profile .input-avatar {
-        font-size: 12px;
+        font-size: 6px;
     }
 
     .header-profile .header-input-name {
@@ -241,6 +272,55 @@
     .main__body-description p,
     select,
     input {
+        font-size: 9px;
+    }
+
+    .main .btn {
+        margin-top: 28px;
+        font-size: 10px;
+    }
+
+    .main .btn-submit {
+        width: 72px;
+    }
+
+    /* Javascript Css */
+    .main .header-mobile-js {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 6%;
+        height: 308px;
+    }
+
+    .header-profile .header_name-mobile-js {
+        font-size: 12px;
+    }
+
+    .header-profile .header_position-mobile-js {
+        font-size: 10px;
+    }
+
+    .header-profile-info .header_contact-mobile-js {
+        font-size: 12px;
+    }
+
+    .header-profile-info .list-info-mobile-js {
+        font-size: 10px;
+    }
+
+    .header-profile-info .header-icon-mobile-js {
+        font-size: 10px;
+    }
+
+    .header-profile-info .header-list-info-mobile-js {
+        margin: 0;
+    }
+
+    .main__body-description .description-list-mobile-js {
+        font-size: 9px;
+    }
+
+    .main__body-description .description-mobile-js {
         font-size: 9px;
     }
 }
