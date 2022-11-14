@@ -213,3 +213,6 @@ const showReview = document.querySelector(".show-review");
         modalClose.addEventListener('click', hideReviews);
 
 
+window.onbeforeunload = function() {
+  return "Are you sure you want to navigate away?";
+}
