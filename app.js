@@ -1,13 +1,13 @@
 
 const btn = document.querySelector(".btn-submit");
-const btn_review = document.querySelector(".btn-review");
+const btn_reLoad = document.querySelector(".btn-reload");
 
 
 
 btn.addEventListener("click", handleDetail);
 function handleDetail() {
     render();
-    alert("Dữ liệu hiện tại đã được lưu, bạn có thể xem lại ở phần Review!")
+    alert("Dữ liệu đã được gửi!")
 }
 
 function render() {
@@ -24,7 +24,7 @@ function render() {
         }
     }
 
-    
+
     const htmls = `
     <div class="main">
         <div class="main__header">
@@ -188,31 +188,61 @@ function render() {
     </div>`
 
     sessionStorage.setItem('data', htmls);
-
-}
-
-btn_review.addEventListener("click", review);
-
-function review() {
     document.querySelector(".modal-body").innerHTML = sessionStorage.getItem('data');
 }
 
+// Show Result
 const showReview = document.querySelector(".show-review");
-        const modal = document.querySelector('.js-modal');
-        const modalClose = document.querySelector('.js-modal-close');
+const modal = document.querySelector('.js-modal');
+const modalClose = document.querySelector('.js-modal-close');
 
-        function showReviews() {
-            modal.classList.add('open');
-        }
-
-        function hideReviews() {
-            modal.classList.remove('open')
-        }
-
-        showReview.addEventListener('click', showReviews);
-        modalClose.addEventListener('click', hideReviews);
-
-
-window.onbeforeunload = function() {
-  return "Are you sure you want to navigate away?";
+function showReviews() {
+    modal.classList.add('open');
 }
+
+function hideReviews() {
+    modal.classList.remove('open')
+}
+
+showReview.addEventListener('click', showReviews);
+modalClose.addEventListener('click', hideReviews);
+
+
+// Reload Page
+btn_reLoad.addEventListener("click", editReLoad);
+
+function editReLoad() {
+    let text = "Edit sẽ điền lại tất cả! Bạn chắc chứ ?";
+    if (confirm(text) === true) {
+        location.reload();
+    }
+}
+document.onkeydown = function (e) {
+    switch (e.which) {
+        case 116: {
+            e.preventDefault();
+            let text = "F5 sẽ điền lại tất cả! Bạn chắc chứ ?";
+            if (confirm(text) === true) {
+                location.reload();
+            }
+            break;
+        }
+    }
+}
+
+let keysPressed = {};
+document.addEventListener('keydown', (event) => {
+    keysPressed[event.key] = true;
+
+    if (keysPressed['Control'] && event.key == 'r') {
+        event.preventDefault();
+        let text = "Crt + R sẽ điền lại tất cả! Bạn chắc chứ ?";
+        if (confirm(text) === true) {
+            location.reload();
+        }
+    }
+});
+
+document.addEventListener('keyup', (event) => {
+    delete keysPressed[event.key];
+});

@@ -171,7 +171,7 @@ ul {
     width: 100%;
 }
 
-.btn-submit, .btn-review {
+.btn-submit, .btn-reload {
     width: 100px;
     padding: 4px;
     border-radius: 4px;
@@ -179,7 +179,7 @@ ul {
     transition: 0.3s background-color;
 }
 
-.btn-submit:hover, .btn-review:hover {
+.btn-submit:hover, .btn-reload:hover {
     color: #fff;
     background-color: var(--primary-color-);
 }
