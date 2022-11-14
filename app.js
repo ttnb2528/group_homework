@@ -19,7 +19,7 @@ function render() {
             arrays.push(inputs[i].value);
         }
         else {
-            alert("Ô điền còn trống !!! ")
+            alert("Ô điền còn trống !!!, dữ liệu lưu có thể bị lỗi ")
             break;
         }
     }
